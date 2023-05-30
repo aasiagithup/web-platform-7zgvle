@@ -1,10 +1,10 @@
 /** Implement a click function to which writes digits on calculator screen */
-button.forEach(button => {
-  button.addEventListener('click',function(){
-    document.querySelector('#nums').textContent =button.inner.HTML
-  })
-  
-})
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    console.log;
+  });
+});
+
 /** Implement a function which clears digits from calculator screen upon clicking AC button */
 
 /** Implement a function which enters digit to screen upon pressing any number button and decimal point */

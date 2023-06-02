@@ -1,10 +1,5 @@
 /** Implement a click function to which writes digits on calculator screen */
-buttons.forEach((button) => {
-  button.addEventListener('click', () => {
-    console.log;
-  });
-});
-
+let startbutton =document.getElementById ("screentext")
 /** Implement a function which clears digits from calculator screen upon clicking AC button */
 
 /** Implement a function which enters digit to screen upon pressing any number button and decimal point */

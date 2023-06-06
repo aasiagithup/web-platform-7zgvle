@@ -1,20 +1,17 @@
 /** Implement a click function to which writes digits on calculator screen */
-
-digitbuttons = document.getElementsByClassName("digit");
-for(i = 0; i < digitbuttons.lenght; i++ ){
-  digitbuttons[i].addEventlistener("click,aclick");
+var screen = document.getElementById("screen");
+function handleclick(digit){
+  screen.textcontent +=digit; 
 }
-function aclick(){
-  screen = document.getElementById("screen");
-  digit = this.innerHTML;
-  currentvalue = screen.value;
-  newvalue = currentvalue + digit;
-  screen.value = new value;
-}  
-  /** Implement a function which clears digits from calculator screen upon clicking AC button */
-  function clearsdigits(){
-  ACbutton = document.getElementsByClassName("ACbutton");
-  ACbutton.addEventlistener("click,cleardigits")
+var btn1 = document.getElementsByClassName("btn-1");
+function(){
+  handleclick("1")
+}
+  /** Implement a function which clears digits from calculator screen upon  AC button */
+  function clearcalculationscreen(){
+    var ACbutton = document.getElementById("Ac-button");
+    ACbutton.addEventListener("click",clearcalculationscreen);
+    
   }
   
 /** Implement a function which enters digit to screen upon pressing any number button and decimal point */
